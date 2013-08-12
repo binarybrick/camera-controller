@@ -61,6 +61,18 @@ void loop() {
   }else if (x < 600){
     // Left
 
+    
+    // Menu handler increase on right-push, ie move to next page
+    if(0 == currentPage){
+      currentPage = currentPageMax;
+    }else{
+      currentPage--;
+    }
+ 
+    // Debounce
+    delay(300);
+
+
   }else if (x < 800){
     // Select is pressed
     
